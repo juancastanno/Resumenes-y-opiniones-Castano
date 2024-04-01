@@ -1,0 +1,179 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    height: 90px;
+    background: linear-gradient(to top,rgb(224, 249, 255),rgb(255, 255, 169)) ;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+}
+
+.logo{
+    display: flex;
+    width: 90px;
+    border-radius: 40%;
+}
+
+.udelheader a{
+    text-decoration: none;
+    color: rgb(149, 150, 255);
+    background-image:  linear-gradient(90deg,rgb(255, 79, 226),rgb(252, 205, 205));
+    background-repeat: no-repeat;
+    background-size: 30% 2px;
+    background-position:  bottom;
+    transition: background-size 600ms ease-in-out;
+}
+
+.udelheader a:hover{
+    background-size: 100% 2px;
+}
+
+/*Fin del header*/
+
+body{
+    background: linear-gradient(240deg, rgb(255, 157, 250), rgb(67, 249, 255));
+}
+
+.box{
+    width: 500px;
+    background-color: rgba(52, 83, 255, 0.4);
+    margin: auto;
+    margin-top: 150px;
+    padding: 20px;
+    color:rgb(233, 178, 178);
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.box h4{
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    letter-spacing: 2px;
+    font-family: ALGERIAN;
+    color: rgb(243, 255, 73);
+}
+
+.box p{
+    text-align: center;
+    font-family: Arial black;
+    font-size: 20px;
+}
+
+/*burbujas*/
+
+.burbuja{
+    background-color: rgb(255, 255, 255, 1);
+    opacity: 0;
+    bottom: 0;
+    border-radius: 50%;
+    position: absolute;
+    animation: burbujas 3s linear infinite ;
+}
+
+.burbuja:nth-child(1){
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(2){
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(3){
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    animation-duration: 3s;
+    animation-delay: 7s;
+}
+
+.burbuja:nth-child(4){
+    width: 50px;
+    height: 50px;
+    left: 95%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(5){
+    width: 70px;
+    height: 70px;
+    left: 65%;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+.burbuja:nth-child(6){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(7){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(8){
+    width: 100px;
+    height: 100px;
+    left: 52%;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(9){
+    width: 65px;
+    height: 65px;
+    left: 51%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+.burbuja:nth-child(10){
+    width: 40px;
+    height: 40px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 4s;
+}
+
+@keyframes burbujas{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    30%{
+        transform: translateX(30px);
+    }
+    50%{
+        opacity: 0.6;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}

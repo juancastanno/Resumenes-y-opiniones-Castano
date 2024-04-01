@@ -1,0 +1,191 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*zona del header*/
+header{
+    display: flex;
+    height: 90px;
+    background: linear-gradient(to top,rgb(224, 249, 255),rgb(255, 255, 169)) ;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    z-index: 3;
+    position: relative;
+    top: 0px;
+}
+
+.logo{
+    display: flex;
+    width: 90px;
+    border-radius: 40%;
+}
+
+.udelheader a{
+    text-decoration: none;
+    color: rgb(149, 150, 255);
+    background-image:  linear-gradient(90deg,rgb(255, 79, 226),rgb(252, 205, 205));
+    background-repeat: no-repeat;
+    background-size: 30% 2px;
+    background-position:  bottom;
+    transition: background-size 600ms ease-in-out;
+}
+
+.udelheader a:hover{
+    background-size: 100% 2px;
+}
+/*fin zona del header*/
+
+body{
+    background: linear-gradient(135deg, rgb(255, 157, 250), rgb(255, 255, 115));
+}
+
+.box{
+    width: 500px;
+    background-color: rgb(230, 103, 255, 0.4);
+    margin: auto;
+    margin-top: 150px;
+    padding: 20px;
+    color:white;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.imgbox{
+    border-radius: 30%;
+}
+
+.box h1{
+    font-size: 40px;
+    font-weight: 100;
+    margin: 30px 0 20px;
+    letter-spacing: 5px;
+    font-family: Forte;
+    color: rgb(93, 201, 201);
+}
+
+.box h2{
+    font-size: 23px;
+    letter-spacing: 4px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    color: rgb(100, 94, 160);
+}
+
+.box p{
+    text-align: center;
+    font-family: Arial black;
+}
+
+/*burbujas*/
+
+.burbuja{
+    background-color: rgb(255, 255, 255, 1);
+    opacity: 0;
+    bottom: 0;
+    border-radius: 50%;
+    position: absolute;
+    animation: burbujas 3s linear infinite ;
+}
+
+.burbuja:nth-child(1){
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(2){
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(3){
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    animation-duration: 3s;
+    animation-delay: 7s;
+}
+
+.burbuja:nth-child(4){
+    width: 50px;
+    height: 50px;
+    left: 95%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(5){
+    width: 70px;
+    height: 70px;
+    left: 65%;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+.burbuja:nth-child(6){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(7){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(8){
+    width: 100px;
+    height: 100px;
+    left: 52%;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(9){
+    width: 65px;
+    height: 65px;
+    left: 51%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+.burbuja:nth-child(10){
+    width: 40px;
+    height: 40px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 4s;
+}
+
+@keyframes burbujas{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    30%{
+        transform: translateX(30px);
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
